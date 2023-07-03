@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Scene</title>
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="icon" href="./assets/images/png/cup.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+        :root {
+            --ff-clicker: 'Clicker Script';
+            --ff-playfair: 'Playfair Display';
+        }
+
+        .clicker {
+            font-family: var(--ff-clicker);
+        }
+
+        .playfair {
+            font-family: var(--ff-playfair);
+        }
+
+        .btn {
+            background-color: #F9C06A;
+            border: 1px solid #F9C06A;
+            border-radius: 24px;
+            box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+            padding: 15px 27px 15px 27px;
+            transition: all 300ms linear;
+        }
+
+        .btn:hover {
+            background-color: #Ffffff;
+            border: 1px solid #Ffffff;
+            color: #F9C06A;
+            box-shadow: 1px 2px 10px 1px rgb(206, 146, 41);
+        }
+
+        .btn-2 {
+            background-color: #F9C06A;
+            border: 1px solid #F9C06A;
+            border-radius: 24px;
+            padding: 13px 26px 13px 26px;
+            transition: all 250ms linear;
+        }
+
+        .btn-2:hover {
+            background-color: white;
+            border: 1px solid #Ffffff;
+            color: #F9C06A;
+            box-shadow: 1px 1px 10px 1px rgb(206, 146, 41);
+        }
+
+
+        @media (max-width:1024px) {
+            label[for="iconbox"] {
+                cursor: pointer;
+                width: 35px;
+                height: 25px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                z-index: 15;
+                position: absolute;
+                right: 20px;
+
+            }
+
+            label[for="iconbox"]>span {
+                width: 100%;
+                height: 4px;
+                background-color: white;
+                border-radius: 10px;
+                z-index: 15;
+            }
+
+            .md-screen {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                background-color: #603809;
+                position: fixed;
+                top: 0;
+                z-index: 12;
+                left: -100%;
+                opacity: 1;
+                pointer-events: none;
+                transition: all 0.7s linear;
+            }
+
+            input[type="checkbox"]:checked+div ul.md-screen {
+                opacity: 1;
+                left: 0;
+                pointer-events: all;
+            }
+
+            .none {
+                display: none !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- //////1st-section/////// -->
+    <header class="bg-no-repeat bg-center bg-auto; bg-cover min-h-screen"
+        style="background-image: url(./assets/images/svg/header-bg.svg);">
+        <nav class="container mx-auto px-10 pt-3">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="clicker text-white text-[35px]">Bean Scene</h1>
+                </div>
+
+                <label for="iconbox" class="z-10 lg:hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="iconbox" hidden class="d-none">
+
+                <div class="flex items-center">
+                    <ul class="text-white flex  gap-[45px] playfair font-medium text-[14px] md-screen">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                        <li><a href="#" class="text-white lg:hidden">Sign In</a></li>
+                        <li><a href="#" class="btn text-black lg:hidden">SingUp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class=" flex gap-[35px] playfair font-medium text-[14px] none">
+                        <li><a href="#" class="text-white">Sign In</a></li>
+                        <li><a href="#" class="btn text-black">SingUp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-28">
+            <div class="container mx-auto ps-10 pb-10">
+                <p class="text-white playfair font-medium sm:text-[22px] text-[19px]">We’ve got your morning covered
+                    with</p>
+                <h1 class="text-white lg:text-[220px] md:text-[200px] sm:text-[180px] text-[143px] clicker">Coffee</h1>
+                <p class="text-white playfair sm:text-[20px] text-[17px] max-w-[527px]">It is best to start your day
+                    with a cup of
+                    coffee.
+                    Discover
+                    the
+                    best flavours coffee you will ever have. We provide the best
+                    for our customers.</p>
+                <div class="py-10">
+                    <a href="#" class="btn-2 playfair text-[16px] font-bold">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <!-- /////////2nd-6th-section/////////// -->
+    <main>
+        <!-- ////////2nd-section//////////// -->
+        <section class="py-24 bacground-[#fffefc]">
+            <div class="relative">
+                <div class=" container mx-auto px-4">
+                    <div class="md:flex items-center justify-center">
+                        <div>
+                            <h1 class="playfair font-bold sm:text-[54px] text-[46px] text-[#603809]">Discover the best
+                                coffee</h1>
+                            <p class="playfair font-normal sm:text-[20px] text-[16px] text-[#707070] max-w-[585px]">Bean
+                                Scene is a
+                                coffee
+                                shop
+                                that
+                                provides
+                                you with
+                                quality
+                                coffee that
+                                helps boost your
+                                productivity and helps build
+                                your mood. Having a cup of coffee is good, but having a cup of real coffee is greater.
+                                There
+                                is no doubt that you will
+                                enjoy this coffee more than others you have ever tasted.</p>
+                            <div class="py-10">
+                                <a href="#" class="btn-2 playfair text-[#1E1E1E] font-bold">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="md:ps-32">
+                            <img src="./assets/images/png/coffee-buds.png" alt="coffee-buds.png">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute lg:left-[-10%] lg:bottom-[-35%] md:left-[-13%] md:bottom-[-30%] sm:left-[-15%] left-[-20%] bottom-[-26%]">
+                    <div class="max-w-[490px] w-[100%]">
+                        <img src="./assets/images/png/coffee_blast_left.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3rd-section -->
+        <section class="py-14">
+            <div class="container mx-auto px-4 py-4">
+                <div>
+                    <h1
+                        class="playfair font-bold lg:text-[54px] md:text-[45px] sm:text-[40px] text-[36px] flex items-center justify-center text-[#603809]">
+                        Enjoy a
+                        new
+                        blend of coffee style</h1>
+                    <p
+                        class="text-[#707070] text-normal playfair sm:fs-[20px] text-[16px] flex items-center justify-center py-4">
+                        Explore
+                        all flavours of coffee with us.
+                        There is
+                        always a new
+                        cup worth experiencing</p>
+                </div>
+
+                <div class="lg:flex items-center justify-center ">
+                    <div class="sm:flex items-center justify-center">
+                        <div class="sm:mx-3 flex items-center justify-center sm:py-4 py-10">
+                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                class="relative ">
+
+                                <div>
+                                    <img src="./assets/images/png/coffee-style-img-1.png" alt="">
+                                </div>
+                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                    style="padding-top: 14px;">
+                                    Cappuccino</h5>
+                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                    Coffee
+                                    50% | Milk 50%
+                                </p>
+                                <p
+                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                    $8.50</p>
+
+                                <div class="flex items-center justify-center translate-y-5">
+                                    <div style="max-width: 136px; ">
+                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                            class="flex items-center justify-center">
+                                            <p class="playfair font-bold text-[16px]"
+                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                Order Now
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="sm:mx-3 flex items-center justify-center">
+                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                class="relative ">
+
+                                <div>
+                                    <img src="./assets/images/png/coffee-style-img-2.png" alt="">
+                                </div>
+                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                    style="padding-top: 14px;">
+                                    Chai Latte</h5>
+                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                    Coffee
+                                    50% | Milk 50%
+                                </p>
+                                <p
+                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                    $8.50</p>
+
+                                <div class="flex items-center justify-center translate-y-5">
+                                    <div style="max-width: 136px; ">
+                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                            class="flex items-center justify-center">
+                                            <p class="playfair font-bold text-[16px]"
+                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                Order Now
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="sm:flex items-center justify-center">
+                        <div class="sm:mx-3 flex items-center justify-center sm:py-4 py-10">
+                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                class="relative ">
+
+                                <div>
+                                    <img src="./assets/images/png/coffee-style-img-3.png" alt="">
+                                </div>
+                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                    style="padding-top: 14px;">
+                                    Macchiato</h5>
+                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                    Coffee
+                                    50% | Milk 50%
+                                </p>
+                                <p
+                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                    $8.50</p>
+
+                                <div class="flex items-center justify-center translate-y-5">
+                                    <div style="max-width: 136px; ">
+                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                            class="flex items-center justify-center">
+                                            <p class="playfair font-bold text-[16px]"
+                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                Order Now
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="sm:mx-3 flex items-center justify-center">
+                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                class="relative ">
+
+                                <div>
+                                    <img src="./assets/images/png/coffee-style-img-4.png" alt="">
+                                </div>
+                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                    style="padding-top: 14px;">
+                                    Expresso</h5>
+                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                    Coffee
+                                    50% | Milk 50%
+                                </p>
+                                <p
+                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                    $8.50</p>
+
+                                <div class="flex items-center justify-center translate-y-5">
+                                    <div style="max-width: 136px; ">
+                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                            class="flex items-center justify-center">
+                                            <p class="playfair font-bold text-[16px]"
+                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                Order Now
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- /////4th-section///// -->
+        <section class="py-10">
+            <div class="">
+                <div class="container mx-auto px-4">
+                    <div>
+                        <p
+                            class="flex items-center justify-center playfair sm:text-[54px] text-[29px] font-bold text-[#603809]">
+                            Why are we
+                            different?
+                        </p>
+                        <p
+                            class="flex items-center justify-center playfair sm:text-[20px] text-[17px] font-normal text-[#707070] py-1">
+                            We
+                            don’t
+                            just make your coffee, we make your day! </p>
+
+                    </div>
+                    <div class="lg:flex items-center justify-center">
+                        <div class="sm:flex items-center justify-center">
+                            <div class="lg:py-8 pt-5 sm:ms-5 flex items-center justify-center">
+                                <div
+                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                    <div class="px-24 pt-9 pb-4 ">
+                                        <img src="./assets/images/png/coffee-beans_1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                            Supreme Beans</p>
+                                        <p
+                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1">
+                                            Beans
+                                            that provides
+                                            great taste</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:py-8 pt-5 sm:ms-5 flex items-center justify-center">
+                                <div
+                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                    <div class="px-24 pt-9 pb-4 ">
+                                        <img src="./assets/images/png/badge_1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                            High Quality</p>
+                                        <p
+                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1">
+                                            We provide the
+                                            highest quality</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="sm:flex items-center justify-center">
+                            <div class="lg:py-8 sm:py-5 pt-5 sm:ms-5 flex items-center justify-center">
+                                <div
+                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                    <div class="px-24 pt-9 pb-4 ">
+                                        <img src="./assets/images/png/coffee-cup_1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                            Extraordinary</p>
+                                        <p
+                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1">
+                                            Coffee like you have
+                                            never tasted</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lg:py-8 py-5 sm:ms-5 flex items-center justify-center">
+                                <div
+                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                    <div class="px-24 pt-9 pb-4 ">
+                                        <img src="./assets/images/png/best-price_1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                            Affordable Price</p>
+                                        <p
+                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-10 pt-1">
+                                            Our Coffee prices are
+                                            easy to afford</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="playfair font-normal text-[20px] text-[#707070]">Great ideas start with great coffee,
+                            Lets
+                            help you achieve that
+
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="playfair font-bold text-[30px] text-[#603809]">Get started today.</p>
+                    </div>
+
+                    <div class="flex items-center justify-center pt-5">
+                        <div style="max-width: 134px;">
+                            <div
+                                style="background-color: #f9c06a; border: 1px solid #F9C06A; border-radius: 24px; cursor: pointer; color: #1e1e1e; padding: 13px 40px 13px 40px;">
+                                <p class="playfair font-bold">Join Us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ///////5th-section////// -->
+        <section class="py-20">
+            <div style="background-image: url(./assets/images/png/cup-bg.png);"
+                class="bg-no-repeat bg-center bg-auto; bg-cover overflow-auto">
+                <div class="container mx-auto px-4">
+                    <div class="sm:flex items-center justify-center py-14">
+                        <div>
+                            <h1
+                                class="playfair text-bold lg:text-[54px] md:text-[40px] text-[36px] text-white max-w-[575px]">
+                                Get a chance
+                                to
+                                have an
+                                Amazing morning</h1>
+                            <p class="text-white playfair text-normal text-[20px] sm:max-w-[409px] py-6">We are giving
+                                you
+                                are
+                                one time
+                                opportunity to
+                                experience a better life with coffee.</p>
+                            <div class="playfair font-bold">
+                                <a href="#" class="btn-2">Order Now</a>
+                            </div>
+                        </div>
+
+                        <div class="lg:ps-56 md:ps-44 sm:ps-36 py-10 flex items-center justify-center z-10">
+                            <img src="./assets/images/png/cup.png" alt="cup.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-10">
+                <p
+                    class="flex items-center justify-center playfair font-bold md:text-[54px] sm:text-[46px] text-[40px] text-[#603809]">
+                    Our coffee perfection feedback
+                </p>
+                <p
+                    class="flex items-center justify-center playfair font-normal sm:text-[20px] text-[16px] text-[#707070] pt-2">
+                    Our customers has amazing things to say about us
+                </p>
+
+                <div class="py-11">
+                    <div class="flex items-center justify-center">
+
+                        <div style="border: 1px solid #F9C06A; max-width: 980px; background-color: #fff9f1; cursor: pointer;"
+                            class="relative">
+                            <div class="pt-14 px-10">
+                                <img src="./assets/images/png/slider_comma.png" alt="">
+                            </div>
+                            <div class="sm:px-[100px] px-4">
+                                <p class="playfair font-semibold sm:text-[18px] text-[13px] max-w-[780px] text-[#707070] text-center"
+                                    style="line-height: 36px;">
+                                    Lorem Ipsum
+                                    is simply
+                                    dummy text of the printing and
+                                    typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                    and
+                                    scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
+                            </div>
+                            <div class="">
+                                <p
+                                    class="playfair text-[32px] font-bold text-[#603809] pt-7 flex items-center justify-center">
+                                    Jonny Thomas</p>
+                                <p
+                                    class="playfair text-normal text-[20px] text-[#707070] flex items-center justify-center py-1">
+                                    Project Manager</p>
+                            </div>
+                            <div class="flex items-center justify-center translate-y-16">
+                                <img src="./assets/images/png/jonny_thoms.png" alt="jonny_thoms.png">
+                            </div>
+                            <div class="absolute sm:left-[-40px] left-[-30px] bottom-[40%]">
+                                <a href="#"><img class="sm:w-[80px] w-[50px] sm:h-[80px] h-[50px]"
+                                        src="./assets/images/png/slider_left_arrow.png" alt="slider_left_arrow.png"></a>
+                            </div>
+                            <div class="absolute sm:right-[-40px] right-[-30px] bottom-[40%] ">
+                                <a href="#"><img class="sm:w-[80px] w-[50px] sm:h-[80px] h-[50px]"
+                                        src="./assets/images/png/slider_right_arrow.png"
+                                        alt="slider_left_arrow.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ///////7-8th-section//////// -->
+    <footer class="relative">
+
+        <div class="absolute left-0">
+            <img src="./assets/images/png/" alt="">
+        </div>
+
+        <!-- //////7th-section//////// -->
+        <section style="background-image: url(./assets/images/png/cup-bg.png);"
+            class="bg-no-repeat bg-center bg-auto; bg-cover">
+            <div class="container mx-auto px-4 py-20">
+                <div class="flex items-center justify-center playfair ">
+                    <h1 class="text-white text-bold lg:text-[54px] sm:text-[40px] text-[37px]">Subscribe to get the
+                        Latest News</h1>
+                </div>
+                <div class="flex items-center justify-center playfair pt-2">
+                    <p class="text-white text-normal sm:text-[20px] text-[16px]">Don’t miss out on our latest news,
+                        updates, tips and
+                        special offers</p>
+                </div>
+                <div class="flex items-center justify-center p-4">
+                    <div style="border: 1px solid #f9c06a; background-color: #fff9f1; border-radius: 4px; cursor: pointer;"
+                        class="sm:w-[630px] max-w-[630px] min-[66px]">
+                        <div class="flex align-center justify-between">
+                            <label for="email" class="sm:pt-5 pt-3 pl-4 sm:pl-5">
+                                <input type="email" placeholder="Enter your mail"
+                                    class="playfair text-normal sm:text-[20px] text-[16px]">
+                            </label>
+                            <a href="#"
+                                style="background-color: #f9c06a; border: 1px solid #f9c06a; border-radius: 2px; color: #603809; "
+                                class="playfair text-bold sm:text-[22px] text-[18px] sm:py-5 sm:px-6 py-3 px-4">Suscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ////////8th-section//////// -->
+        <section style="background-image: url(./assets/images/png/footer-back.png);"
+            class="bg-no-repeat bg-center bg-auto; bg-cover">
+            <div class="container mx-auto px-4 pt-40">
+                <div class="lg:flex justify-center">
+                    <div>
+                        <div>
+                            <h1 class="clicker text-white text-[54px]">Bean Scene</h1>
+                        </div>
+                        <div class="text-white">
+                            <p class="lg:max-w-[380px] py-5 playfair text-normal text-[14px]">Lorem Ipsum is simply
+                                dummy
+                                text of the
+                                printing and
+                                typesetting
+                                industry.
+                                Lorem Ipsum has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book.</p>
+                            <div class="flex align-center gap-4 pb-20 pt-5">
+                                <a href="#"><img src="./assets/images/png/facebook-icon.png" alt="facebook-icon"></a>
+                                <a href="#"><img src="./assets/images/png/instagram.png" alt="instagram"></a>
+                                <a href="#"><img src="./assets/images/png/youtube.png" alt="youtube"></a>
+                                <a href="#"><img src="./assets/images/png/twitter.png" alt="twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sm:flex lg:ps-20">
+                        <div class="py-7 sm:pt-5">
+                            <ul>
+                                <li class="playfair font-bold text-[26px] text-white">About</li>
+                                <li class="pt-12"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal">Menu</a></li>
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal">Features</a></li>
+                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">News
+                                        &
+                                        Blogs</a>
+                                </li>
+                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">Help
+                                        &
+                                        Supports</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sm:ps-20 sm:pt-5 py-7">
+                            <ul>
+                                <li class="playfair font-bold text-[26px] text-white">Company</li>
+                                <li class="pt-12"><a href="#" class="text-white playfair text-[18px] font-normal">How we
+                                        work</a></li>
+                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">Terms
+                                        of service</a></li>
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal">Pricing</a>
+                                </li>
+                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sm:ps-20 sm:pt-5 py-7">
+                            <ul>
+                                <li class="playfair font-bold text-[26px] text-white">Contact Us</li>
+                                <li class="max-w-[332px] pt-7"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal">Akshya
+                                        Nagar 1st
+                                        Block 1st Cross, Rammurthy nagar, Bangalore-560016</a></li>
+                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">+1
+                                        202-918-2132</a>
+                                </li>
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal">beanscene@mail.com</a>
+                                </li>
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal">www.beanscene.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
