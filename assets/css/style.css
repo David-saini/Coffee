@@ -27,6 +27,100 @@
       border: 1px solid #Ffffff;
       color: #F9C06A;
       box-shadow: 1px 1px 10px 1px rgb(206, 146, 41);
+      cursor: pointer;
+  }
+
+  .btn-3 {
+      background-color: #F9C06A;
+      border: 1px solid #F9C06A;
+      border-radius: 24px;
+      padding: 13px 40px 13px 40px;
+      transition: all 300ms linear !important;
+  }
+
+  .btn-3:hover {
+      background-color: white;
+      border: 1px solid #Ffffff;
+      color: #F9C06A;
+      box-shadow: 1px 1px 10px 1px rgb(206, 146, 41);
+      cursor: pointer;
+  }
+
+
+
+
+
+  #button {
+      display: inline-block;
+      background-color: #FF9800;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 4px;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      transition: background-color .3s,
+          opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+  }
+
+  #button::after {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+  }
+
+  #button:hover {
+      cursor: pointer;
+      background-color: #333;
+  }
+
+  #button:active {
+      background-color: #555;
+  }
+
+  #button.show {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  /* Styles for the content section */
+
+  .content {
+      width: 77%;
+      margin: 50px auto;
+      font-family: 'Merriweather', serif;
+      font-size: 17px;
+      color: #6c767a;
+      line-height: 1.9;
+  }
+
+  @media (min-width: 500px) {
+      .content {
+          width: 43%;
+      }
+
+      #button {
+          margin: 30px;
+      }
+  }
+
+  @media (max-width:1279px) {
+      .pad {
+          padding-left: 56px;
+      }
+
+      .p-x {
+          padding-left: 56px;
+          padding-right: 56px;
+      }
   }
 
   @media (max-width:1024px) {

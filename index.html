@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean Scene</title>
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="icon" href="./assets/images/png/cup.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- //////1st-section/////// -->
     <header class="bg-no-repeat bg-center bg-auto; bg-cover min-h-screen"
         style="background-image: url(./assets/images/svg/header-bg.svg);">
-        <nav class="container mx-auto px-10 pt-3">
+        <nav class="container mx-auto sm:px-10 px-4 pt-3">
             <div class="flex justify-between items-center">
                 <div>
                     <h1 class="clicker text-white text-[35px]">Bean Scene</h1>
@@ -30,44 +33,48 @@
 
                 <div class="flex items-center">
                     <ul class="text-white flex  gap-[45px] playfair font-medium text-[14px] md-screen">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#home" class="hover:text-[#F9C06A]">Home</a></li>
+                        <li><a href="#menu" class="hover:text-[#F9C06A]">Menu</a></li>
+                        <li><a href="#about" class="hover:text-[#F9C06A]">About Us</a></li>
+                        <li><a href="#Contact" class="hover:text-[#F9C06A]">Contact Us</a></li>
 
-                        <li><a href="#" class="text-white lg:hidden">Sign In</a></li>
+                        <li><a href="#" class="text-white lg:hidden hover:text-[#F9C06A]">Sign In</a></li>
                         <li><a href="#" class="btn text-black lg:hidden">SingUp</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul class=" flex gap-[35px] playfair font-medium text-[14px] none">
-                        <li><a href="#" class="text-white">Sign In</a></li>
-                        <li><a href="#" class="btn text-black">SingUp</a></li>
+                        <li><a href="#" class="text-white hover:text-[#F9C06A]">Sign In</a></li>
+                        <li><a href="#sign" class="btn text-black">SingUp</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <section class="pt-28">
-            <div class="container mx-auto ps-10 pb-10">
-                <p class="text-white playfair font-medium sm:text-[22px] text-[19px]">We’ve got your morning covered
-                    with</p>
-                <h1 class="text-white lg:text-[220px] md:text-[200px] sm:text-[180px] text-[143px] clicker">Coffee</h1>
-                <p class="text-white playfair sm:text-[20px] text-[17px] max-w-[527px]">It is best to start your day
-                    with a cup of
-                    coffee.
-                    Discover
-                    the
-                    best flavours coffee you will ever have. We provide the best
-                    for our customers.</p>
-                <div class="py-10">
-                    <a href="#" class="btn-2 playfair text-[16px] font-bold">Order Now</a>
+        <section class="pt-28 overflow-hidden" id="home">
+            <div class="container mx-auto sm:px-10 px-4 pb-10">
+                <div data-aos="fade-right" data-duration="2500" data-deley="800" data-aos-easing="ease-in-sine">
+                    <div>
+                        <p class="text-white playfair font-medium sm:text-[22px] text-[19px]">We’ve got
+                            your morning covered
+                            with</p>
+                    </div>
+                    <h1 class="text-white lg:text-[220px] md:text-[200px] sm:text-[180px] text-[143px] clicker">Coffee
+                    </h1>
+                    <p class="text-white playfair sm:text-[20px] text-[17px] max-w-[527px]">It is best to start your day
+                        with a cup of
+                        coffee.
+                        Discover
+                        the
+                        best flavours coffee you will ever have. We provide the best
+                        for our customers.</p>
+                    <div class="py-10">
+                        <a href="#" class="btn-2 playfair text-[16px] font-bold">Order Now</a>
+                    </div>
                 </div>
+
             </div>
         </section>
-
     </header>
-
     <!-- /////////2nd-6th-section/////////// -->
     <main>
         <!-- ////////2nd-section//////////// -->
@@ -75,7 +82,7 @@
             <div class="relative">
                 <div class=" container mx-auto px-4">
                     <div class="md:flex items-center justify-center">
-                        <div>
+                        <div data-aos="fade-right" data-duration="2500" data-deley="800" data-aos-easing="ease-in-sine">
                             <h1 class="playfair font-bold sm:text-[54px] text-[46px] text-[#603809]">Discover the best
                                 coffee</h1>
                             <p class="playfair font-normal sm:text-[20px] text-[16px] text-[#707070] max-w-[585px]">Bean
@@ -93,27 +100,28 @@
                                 There
                                 is no doubt that you will
                                 enjoy this coffee more than others you have ever tasted.</p>
-                            <div class="py-10">
-                                <a href="#" class="btn-2 playfair text-[#1E1E1E] font-bold">Learn More</a>
+                            <div class="py-10 playfair text-[#1E1E1E] font-bold">
+                                <a href="#" class="btn-2 playfair">Learn More</a>
                             </div>
                         </div>
-                        <div class="md:ps-32">
+                        <div class="md:ps-32" data-aos="zoom-in" data-duration="2500" data-deley="800"
+                            data-aos-easing="linear">
                             <img src="./assets/images/png/coffee-buds.png" alt="coffee-buds.png">
                         </div>
                     </div>
                 </div>
-                <div
-                    class="absolute lg:left-[-10%] lg:bottom-[-35%] md:left-[-13%] md:bottom-[-30%] sm:left-[-15%] left-[-20%] bottom-[-26%]">
-                    <div class="max-w-[490px] w-[100%]">
+                <div class="absolute left-[0%] lg:bottom-[-45%] bottom-[-28%]" style="z-index: -1;">
+                    <div class="lg:max-w-[480px]" data-aos="fade-right" data-duration="2500" data-deley="800"
+                        data-aos-easing="linear">
                         <img src="./assets/images/png/coffee_blast_left.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <!-- 3rd-section -->
-        <section class="py-14">
+        <section class="py-14 overflow-hidden" id="menu">
             <div class="container mx-auto px-4 py-4">
-                <div>
+                <div data-aos="zoom-in" data-duration="1500" data-aos-easing="linear" data-deley="500">
                     <h1
                         class="playfair font-bold lg:text-[54px] md:text-[45px] sm:text-[40px] text-[36px] flex items-center justify-center text-[#603809]">
                         Enjoy a
@@ -131,149 +139,175 @@
                 <div class="lg:flex items-center justify-center ">
                     <div class="sm:flex items-center justify-center">
                         <div class="sm:mx-3 flex items-center justify-center sm:py-4 py-10">
-                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
-                                class="relative ">
+                            <div class="hover:scale-[1.02] hover:transition-all" data-aos="flip-left" data-deley="1000"
+                                data-aos-easing="linear" data-duration="2000">
+                                <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                    class="relative ">
+                                    <div class="hover:bg-[#FFEED8] hover:transition-all">
+                                        <div>
+                                            <img src="./assets/images/png/coffee-style-img-1.png" alt="">
+                                        </div>
+                                        <h5 class="playfair font-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                            style="padding-top: 14px;">
+                                            Cappuccino</h5>
+                                        <p
+                                            class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                            Coffee
+                                            50% | Milk 50%
+                                        </p>
+                                        <p
+                                            class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                            $8.50</p>
 
-                                <div>
-                                    <img src="./assets/images/png/coffee-style-img-1.png" alt="">
-                                </div>
-                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
-                                    style="padding-top: 14px;">
-                                    Cappuccino</h5>
-                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
-                                    Coffee
-                                    50% | Milk 50%
-                                </p>
-                                <p
-                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
-                                    $8.50</p>
-
-                                <div class="flex items-center justify-center translate-y-5">
-                                    <div style="max-width: 136px; ">
-                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
-                                            class="flex items-center justify-center">
-                                            <p class="playfair font-bold text-[16px]"
-                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
-                                                Order Now
-                                            </p>
+                                        <div class="flex items-center justify-center translate-y-5">
+                                            <div style="max-width: 136px;">
+                                                <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                                    class="flex items-center justify-center">
+                                                    <div class="hover:bg-[#fff9f1] hover:rounded-3xl">
+                                                        <p class="playfair font-bold text-[16px]"
+                                                            style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                            Order Now
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="sm:mx-3 flex items-center justify-center">
-                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
-                                class="relative ">
+                            <div class="hover:scale-[1.02] hover:transition-all" data-aos="flip-left" data-deley="1000"
+                                data-aos-easing="linear" data-duration="2000">
+                                <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                    class="relative ">
 
-                                <div>
-                                    <img src="./assets/images/png/coffee-style-img-2.png" alt="">
-                                </div>
-                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
-                                    style="padding-top: 14px;">
-                                    Chai Latte</h5>
-                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
-                                    Coffee
-                                    50% | Milk 50%
-                                </p>
-                                <p
-                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
-                                    $8.50</p>
+                                    <div class="hover:bg-[#FFEED8] hover:transition-all">
+                                        <div>
+                                            <img src="./assets/images/png/coffee-style-img-2.png" alt="">
+                                        </div>
+                                        <h5 class="playfair font-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                            style="padding-top: 14px;">
+                                            Chai Latte</h5>
+                                        <p
+                                            class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                            Coffee
+                                            50% | Milk 50%
+                                        </p>
+                                        <p
+                                            class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                            $8.50</p>
 
-                                <div class="flex items-center justify-center translate-y-5">
-                                    <div style="max-width: 136px; ">
-                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
-                                            class="flex items-center justify-center">
-                                            <p class="playfair font-bold text-[16px]"
-                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
-                                                Order Now
-                                            </p>
+                                        <div class="flex items-center justify-center translate-y-5">
+                                            <div style="max-width: 136px;">
+                                                <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                                    class="flex items-center justify-center">
+                                                    <div class="hover:bg-[#fff9f1] hover:rounded-3xl">
+                                                        <p class="playfair font-bold text-[16px]"
+                                                            style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                            Order Now
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
 
                     <div class="sm:flex items-center justify-center">
                         <div class="sm:mx-3 flex items-center justify-center sm:py-4 py-10">
-                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
-                                class="relative ">
+                            <div class="hover:scale-[1.02] hover:transition-all" data-aos="flip-left" data-deley="1000"
+                                data-aos-easing="linear" data-duration="2000">
+                                <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                    class="relative ">
 
-                                <div>
-                                    <img src="./assets/images/png/coffee-style-img-3.png" alt="">
-                                </div>
-                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
-                                    style="padding-top: 14px;">
-                                    Macchiato</h5>
-                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
-                                    Coffee
-                                    50% | Milk 50%
-                                </p>
-                                <p
-                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
-                                    $8.50</p>
+                                    <div class="hover:bg-[#FFEED8] hover:transition-all">
+                                        <div>
+                                            <img src="./assets/images/png/coffee-style-img-3.png" alt="">
+                                        </div>
+                                        <h5 class="playfair font-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                            style="padding-top: 14px;">
+                                            Macchiato</h5>
+                                        <p
+                                            class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                            Coffee
+                                            50% | Milk 50%
+                                        </p>
+                                        <p
+                                            class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                            $8.50</p>
 
-                                <div class="flex items-center justify-center translate-y-5">
-                                    <div style="max-width: 136px; ">
-                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
-                                            class="flex items-center justify-center">
-                                            <p class="playfair font-bold text-[16px]"
-                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
-                                                Order Now
-                                            </p>
+                                        <div class="flex items-center justify-center translate-y-5">
+                                            <div style="max-width: 136px;">
+                                                <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                                    class="flex items-center justify-center">
+                                                    <div class="hover:bg-[#fff9f1] hover:rounded-3xl">
+                                                        <p class="playfair font-bold text-[16px]"
+                                                            style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                            Order Now
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="sm:mx-3 flex items-center justify-center" data-aos="flip-left" data-deley="1000"
+                            data-aos-easing="linear" data-duration="2000">
+                            <div class="hover:scale-[1.02] hover:transition-all">
+                                <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
+                                    class="relative ">
 
+                                    <div class="hover:bg-[#FFEED8] hover:transition-all">
+                                        <div>
+                                            <img src="./assets/images/png/coffee-style-img-4.png" alt="">
+                                        </div>
+                                        <h5 class="playfair font-bold text-[22px] text-[#603809] flex items-center justify-center"
+                                            style="padding-top: 14px;">
+                                            Expresso</h5>
+                                        <p
+                                            class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
+                                            Coffee
+                                            50% | Milk 50%
+                                        </p>
+                                        <p
+                                            class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
+                                            $8.50</p>
 
-                        <div class="sm:mx-3 flex items-center justify-center">
-                            <div style="border: 1px solid #F9C06A6B; background-color: #fff9f1; cursor: pointer;"
-                                class="relative ">
-
-                                <div>
-                                    <img src="./assets/images/png/coffee-style-img-4.png" alt="">
-                                </div>
-                                <h5 class="playfair text-bold text-[22px] text-[#603809] flex items-center justify-center"
-                                    style="padding-top: 14px;">
-                                    Expresso</h5>
-                                <p class="playfair text-normal py-1 flex items-center justify-center text-[#1E1E1E]">
-                                    Coffee
-                                    50% | Milk 50%
-                                </p>
-                                <p
-                                    class=" playfair text-bold text-[18px] text-[#603809] flex items-center justify-center pb-10">
-                                    $8.50</p>
-
-                                <div class="flex items-center justify-center translate-y-5">
-                                    <div style="max-width: 136px; ">
-                                        <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
-                                            class="flex items-center justify-center">
-                                            <p class="playfair font-bold text-[16px]"
-                                                style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
-                                                Order Now
-                                            </p>
+                                        <div class="flex items-center justify-center translate-y-5">
+                                            <div style="max-width: 136px;">
+                                                <div style="background-color: #F9C06A; border: 1px solid #F9C06A; color: #603809; border-radius: 24px;"
+                                                    class="flex items-center justify-center">
+                                                    <div class="hover:bg-[#fff9f1] hover:rounded-3xl">
+                                                        <p class="playfair font-bold text-[16px]"
+                                                            style="min-height: 48px; display: flex; align-items: center; justify-content: center; padding:13px 26px 13px 26px;">
+                                                            Order Now
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
-
         <!-- /////4th-section///// -->
-        <section class="py-10">
+        <section class="py-10 relative ">
+            <img style="z-index: 1;"
+                class="absolute right-0 top-[-10%] lg:max-w-[440px] md:max-w-[350px] sm:max-w-[300px] max-w-[250px]"
+                src="./assets/images/png/coffee_blast_right.png" alt="coffee_blast_right.png">
             <div class="">
                 <div class="container mx-auto px-4">
-                    <div>
+                    <div data-aos="zoom-in" data-duration="1500" data-aos-easing="linear" data-deley="500">
                         <p
                             class="flex items-center justify-center playfair sm:text-[54px] text-[29px] font-bold text-[#603809]">
                             Why are we
@@ -284,43 +318,52 @@
                             We
                             don’t
                             just make your coffee, we make your day! </p>
-
                     </div>
                     <div class="lg:flex items-center justify-center">
                         <div class="sm:flex items-center justify-center">
                             <div class="lg:py-8 pt-5 sm:ms-5 flex items-center justify-center">
-                                <div
-                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
-                                    <div class="px-24 pt-9 pb-4 ">
-                                        <img src="./assets/images/png/coffee-beans_1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p
-                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
-                                            Supreme Beans</p>
-                                        <p
-                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1">
-                                            Beans
-                                            that provides
-                                            great taste</p>
+                                <div class="hover:translate-y-[-10px] transition-all" data-aos="flip-left"
+                                    data-deley="1000" data-aos-easing="linear" data-duration="2000">
+                                    <div
+                                        style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                        <div class="hover:bg-[#FFEED8]">
+                                            <div class="px-24 pt-9 pb-4">
+                                                <img src="./assets/images/png/coffee-beans_1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                                    Supreme Beans</p>
+                                                <p
+                                                    class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1 pb-9">
+                                                    Beans
+                                                    that provides
+                                                    great taste</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="lg:py-8 pt-5 sm:ms-5 flex items-center justify-center">
-                                <div
-                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
-                                    <div class="px-24 pt-9 pb-4 ">
-                                        <img src="./assets/images/png/badge_1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p
-                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
-                                            High Quality</p>
-                                        <p
-                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1">
-                                            We provide the
-                                            highest quality</p>
+                                <div class="hover:translate-y-[-10px] transition-all" data-aos="flip-left"
+                                    data-deley="1000" data-aos-easing="linear" data-duration="2000">
+                                    <div
+                                        style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                        <div class="hover:bg-[#FFEED8]">
+                                            <div class="px-24 pt-9 pb-4 ">
+                                                <img src="./assets/images/png/badge_1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                                    High Quality</p>
+                                                <p
+                                                    class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1 pb-9">
+                                                    We provide the
+                                                    highest quality</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -329,73 +372,81 @@
 
                         <div class="sm:flex items-center justify-center">
                             <div class="lg:py-8 sm:py-5 pt-5 sm:ms-5 flex items-center justify-center">
-                                <div
-                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
-                                    <div class="px-24 pt-9 pb-4 ">
-                                        <img src="./assets/images/png/coffee-cup_1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p
-                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
-                                            Extraordinary</p>
-                                        <p
-                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1">
-                                            Coffee like you have
-                                            never tasted</p>
+                                <div class="hover:translate-y-[-10px] transition-all" data-aos="flip-left"
+                                    data-deley="1000" data-aos-easing="linear" data-duration="2000">
+                                    <div
+                                        style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                        <div class="hover:bg-[#FFEED8] ">
+                                            <div class="px-24 pt-9 pb-4 ">
+                                                <img src="./assets/images/png/coffee-cup_1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                                    Extraordinary</p>
+                                                <p
+                                                    class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-12 pt-1 pb-9">
+                                                    Coffee like you have
+                                                    never tasted</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="lg:py-8 py-5 sm:ms-5 flex items-center justify-center">
-                                <div
-                                    style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
-                                    <div class="px-24 pt-9 pb-4 ">
-                                        <img src="./assets/images/png/best-price_1.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p
-                                            class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
-                                            Affordable Price</p>
-                                        <p
-                                            class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-10 pt-1">
-                                            Our Coffee prices are
-                                            easy to afford</p>
+                                <div class="hover:translate-y-[-10px] transition-all" data-aos="flip-left"
+                                    data-deley="1000" data-aos-easing="linear" data-duration="2000">
+                                    <div
+                                        style="border: 1px solid #fce1b8; background-color: #fff9f1; max-width: 280px; min-height: 284px; cursor: pointer;">
+                                        <div class="hover:bg-[#FFEED8]">
+                                            <div class="px-24 pt-9 pb-4 ">
+                                                <img src="./assets/images/png/best-price_1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="playfair font-bold text-[28px] text-[#603809] flex items-center justify-center">
+                                                    Affordable Price</p>
+                                                <p
+                                                    class="playfair font-normal text-[20px] text-[#707070] flex items-center justify-center text-center px-10 pt-1 pb-9">
+                                                    Our Coffee prices are
+                                                    easy to afford</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center" data-aos="fade-down" data-duration="1500"
+                        data-aos-easing="linear" data-deley="500">
                         <p class="playfair font-normal text-[20px] text-[#707070]">Great ideas start with great coffee,
                             Lets
                             help you achieve that
 
                         </p>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center" data-aos="fade-up" data-duration="1500"
+                        data-aos-easing="linear" data-deley="500">
                         <p class="playfair font-bold text-[30px] text-[#603809]">Get started today.</p>
                     </div>
 
                     <div class="flex items-center justify-center pt-5">
-                        <div style="max-width: 134px;">
-                            <div
-                                style="background-color: #f9c06a; border: 1px solid #F9C06A; border-radius: 24px; cursor: pointer; color: #1e1e1e; padding: 13px 40px 13px 40px;">
-                                <p class="playfair font-bold">Join Us</p>
-                            </div>
-                        </div>
+                        <a href="#" class="btn-3 playfair text-[16px] font-bold" data-aos="fade-up" data-duration="1500"
+                            data-aos-easing="linear" data-deley="500">Join Us</a>
+
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- ///////5th-section////// -->
-        <section class="py-20">
+        <section class="py-20 relative overflow-hidden">
             <div style="background-image: url(./assets/images/png/cup-bg.png);"
                 class="bg-no-repeat bg-center bg-auto; bg-cover overflow-auto">
                 <div class="container mx-auto px-4">
                     <div class="sm:flex items-center justify-center py-14">
-                        <div>
+                        <div data-aos="fade-right" data-aos-easing="linear" data-deley="500" data-duration="2000">
                             <h1
                                 class="playfair text-bold lg:text-[54px] md:text-[40px] text-[36px] text-white max-w-[575px]">
                                 Get a chance
@@ -413,28 +464,45 @@
                             </div>
                         </div>
 
-                        <div class="lg:ps-56 md:ps-44 sm:ps-36 py-10 flex items-center justify-center z-10">
-                            <img src="./assets/images/png/cup.png" alt="cup.png">
+                        <div class="lg:ps-56 md:ps-44 sm:ps-36 py-10 flex items-center justify-center z-10"
+                            data-aos="zoom-in-left" data-aos-easing="linear" data-deley="500" data-duration="2000">
+                            <img style="z-index:1;" src="./assets/images/png/cup.png" alt="cup.png">
                         </div>
                     </div>
                 </div>
+                <img class="absolute bottom-[80px] right-0 lg:max-w-[500px] sm:max-w-[400px]"
+                    src="./assets/images/png/coffee_bean.png" alt="">
             </div>
         </section>
+        <!-- ///////////6th-section////////////// -->
+        <section class="py-20 relative overflow-hidden" id="about">
+            <img style="z-index: 1;"
+                class="absolute bottom-[13%] lg:max-w-[380px] md:max-w-[300px] sm:max-w-[250px] max-w-[200px]"
+                data-aos="fade-right" data-duration="1500" data-aos-easing="linear" data-deley="500"
+                src="./assets/images/png/coffee_blast_left_2.png" alt="coffee_blast_left_2.png">
 
-        <section class="py-20">
-            <div class="container mx-auto px-10">
+            <img style="z-index: 1;"
+                class="absolute right-0 top-[17%] lg:max-w-[380px] md:max-w-[300px] sm:max-w-[250px] max-w-[200px]"
+                data-aos="fade-left" data-duration="1500" data-aos-easing="linear" data-deley="500"
+                src="./assets/images/png/coffee_blast_right.png" alt="coffee_blast_right.png">
+
+
+            <div class="flex items-center justify-center" data-aos="zoom-in" data-duration="1500"
+                data-aos-easing="linear" data-deley="500">
                 <p
-                    class="flex items-center justify-center playfair font-bold md:text-[54px] sm:text-[46px] text-[40px] text-[#603809]">
+                    class="flex justify-center playfair font-bold md:text-[54px] sm:text-[40px] text-[30px] text-[#603809] px-4">
                     Our coffee perfection feedback
                 </p>
-                <p
-                    class="flex items-center justify-center playfair font-normal sm:text-[20px] text-[16px] text-[#707070] pt-2">
-                    Our customers has amazing things to say about us
-                </p>
+            </div>
+            <p class="flex justify-center playfair font-normal sm:text-[20px] text-[16px] text-[#707070] pt-2 px-4"
+                data-aos="zoom-in" data-duration="1500" data-aos-easing="linear" data-deley="500">
+                Our customers has amazing things to say about us
+            </p>
 
+            <div class="container mx-auto px-10">
                 <div class="py-11">
-                    <div class="flex items-center justify-center">
-
+                    <div class="flex items-center justify-center" data-aos="zoom-in" data-duration="1500"
+                        data-aos-easing="linear" data-deley="500">
                         <div style="border: 1px solid #F9C06A; max-width: 980px; background-color: #fff9f1; cursor: pointer;"
                             class="relative">
                             <div class="pt-14 px-10">
@@ -455,7 +523,7 @@
                                     typesetting, remaining essentially
                                     unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
                             </div>
-                            <div class="">
+                            <div>
                                 <p
                                     class="playfair text-[32px] font-bold text-[#603809] pt-7 flex items-center justify-center">
                                     Jonny Thomas</p>
@@ -466,6 +534,7 @@
                             <div class="flex items-center justify-center translate-y-16">
                                 <img src="./assets/images/png/jonny_thoms.png" alt="jonny_thoms.png">
                             </div>
+
                             <div class="absolute sm:left-[-40px] left-[-30px] bottom-[40%]">
                                 <a href="#"><img class="sm:w-[80px] w-[50px] sm:h-[80px] h-[50px]"
                                         src="./assets/images/png/slider_left_arrow.png" alt="slider_left_arrow.png"></a>
@@ -478,58 +547,70 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </section>
     </main>
 
     <!-- ///////7-8th-section//////// -->
-    <footer class="relative">
-
-        <div class="absolute left-0">
-            <img src="./assets/images/png/" alt="">
-        </div>
-
+    <footer>
         <!-- //////7th-section//////// -->
-        <section style="background-image: url(./assets/images/png/cup-bg.png);"
-            class="bg-no-repeat bg-center bg-auto; bg-cover">
-            <div class="container mx-auto px-4 py-20">
-                <div class="flex items-center justify-center playfair ">
-                    <h1 class="text-white text-bold lg:text-[54px] sm:text-[40px] text-[37px]">Subscribe to get the
-                        Latest News</h1>
-                </div>
-                <div class="flex items-center justify-center playfair pt-2">
-                    <p class="text-white text-normal sm:text-[20px] text-[16px]">Don’t miss out on our latest news,
-                        updates, tips and
-                        special offers</p>
-                </div>
-                <div class="flex items-center justify-center p-4">
-                    <div style="border: 1px solid #f9c06a; background-color: #fff9f1; border-radius: 4px; cursor: pointer;"
-                        class="sm:w-[630px] max-w-[630px] min-[66px]">
-                        <div class="flex align-center justify-between">
-                            <label for="email" class="sm:pt-5 pt-3 pl-4 sm:pl-5">
-                                <input type="email" placeholder="Enter your mail"
-                                    class="playfair text-normal sm:text-[20px] text-[16px]">
-                            </label>
-                            <a href="#"
-                                style="background-color: #f9c06a; border: 1px solid #f9c06a; border-radius: 2px; color: #603809; "
-                                class="playfair text-bold sm:text-[22px] text-[18px] sm:py-5 sm:px-6 py-3 px-4">Suscribe</a>
+        <section style="position: relative;" id="sign">
+            <img class="absolute left-[0%] sm:bottom-[-30%] bottom-[-10%] sm:max-w-[350px] sm:h-[290px] max-w[290px] h-[190px]"
+                data-aos="zoom-in" data-duration="1500" data-aos-easing="linear" data-deley="500"
+                src="./assets/images/png/pngwing_1.png" alt="">
+            <div style="background-image: url(./assets/images/png/cup-bg.png);"
+                class="bg-no-repeat bg-center bg-auto; bg-cover">
+                <div class="container mx-auto px-4 py-20">
+                    <div class="flex items-center justify-center playfair " data-aos="zoom-in" data-duration="1500"
+                        data-aos-easing="linear" data-deley="500">
+                        <h1 class="text-white text-bold lg:text-[54px] sm:text-[40px] text-[37px]">Subscribe to get the
+                            Latest News</h1>
+                    </div>
+                    <div class="flex items-center justify-center playfair pt-2" data-aos="zoom-in" data-duration="1500"
+                        data-aos-easing="linear" data-deley="500">
+                        <p class="text-white text-normal sm:text-[20px] text-[16px]">Don’t miss out on our latest news,
+                            updates, tips and
+                            special offers</p>
+                    </div>
+                    <div class="flex items-center justify-center p-4" style="z-index: 4;" data-aos="flip-up"
+                        data-duration="1500" data-aos-easing="linear" data-deley="500">
+                        <div style="border: 1px solid #f9c06a; background-color: #fff9f1; border-radius: 4px; cursor: pointer; z-index: 1;"
+                            class="sm:w-[630px] max-w-[630px] min-[66px]">
+                            <div class="flex align-center justify-between">
+                                <label for="email" class="sm:pt-5 pt-3 pl-4 sm:pl-5">
+                                    <input type="email" placeholder="Enter your mail"
+                                        class="playfair text-normal sm:text-[20px] text-[16px]">
+                                </label>
+                                <a href="#"
+                                    style="background-color: #f9c06a; border: 1px solid #f9c06a; border-radius: 2px; color: #603809; "
+                                    class="playfair text-bold sm:text-[22px] text-[18px] sm:py-5 sm:px-6 py-3 px-4">Suscribe</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="lg:block hidden">
+                <img class="sm:max-w-[350px] sm:h-[290px] max-w[290px] h-[190px] absolute right-[0%] top-[50%] "
+                    data-aos="zoom-in" data-duration="1500" data-aos-easing="linear" data-deley="500"
+                    src="./assets/images/png/pngwing_2.png" alt="">
+            </div>
+
         </section>
         <!-- ////////8th-section//////// -->
-        <section style="background-image: url(./assets/images/png/footer-back.png);"
-            class="bg-no-repeat bg-center bg-auto; bg-cover">
+        <section id="Contact" style="background-image: url(./assets/images/png/footer-back.png);"
+            class="bg-no-repeat bg-center bg-auto; bg-cover overflow-hidden">
             <div class="container mx-auto px-4 pt-40">
                 <div class="lg:flex justify-center">
                     <div>
-                        <div>
+                        <div data-aos="fade-right" data-duration="1500" data-aos-easing="linear" data-deley="500">
                             <h1 class="clicker text-white text-[54px]">Bean Scene</h1>
                         </div>
                         <div class="text-white">
-                            <p class="lg:max-w-[380px] py-5 playfair text-normal text-[14px]">Lorem Ipsum is simply
+                            <p class="lg:max-w-[380px] py-5 playfair text-normal text-[14px]" data-aos="fade-right"
+                                data-duration="1500" data-aos-easing="linear" data-deley="500">Lorem Ipsum is simply
                                 dummy
                                 text of the
                                 printing and
@@ -541,28 +622,42 @@
                                 scrambled
                                 it to make a type specimen
                                 book.</p>
-                            <div class="flex align-center gap-4 pb-20 pt-5">
-                                <a href="#"><img src="./assets/images/png/facebook-icon.png" alt="facebook-icon"></a>
-                                <a href="#"><img src="./assets/images/png/instagram.png" alt="instagram"></a>
-                                <a href="#"><img src="./assets/images/png/youtube.png" alt="youtube"></a>
-                                <a href="#"><img src="./assets/images/png/twitter.png" alt="twitter"></a>
+                            <div class="flex align-center gap-4 pb-20 pt-5" data-aos="fade-down" data-duration="1500"
+                                data-aos-easing="linear" data-deley="500">
+                                <a href="#"><img
+                                        class="hover:translate-y-[-10px] hover:scale-[1.2] hover:transition-all "
+                                        src="./assets/images/png/facebook-icon.png" alt="facebook-icon"></a>
+                                <a href="#"><img
+                                        class="hover:translate-y-[-10px] hover:scale-[1.2] hover:transition-all"
+                                        src="./assets/images/png/instagram.png" alt="instagram"></a>
+                                <a href="#"><img
+                                        class="hover:translate-y-[-10px] hover:scale-[1.2] hover:transition-all"
+                                        src="./assets/images/png/youtube.png" alt="youtube"></a>
+                                <a href="#"><img
+                                        class="hover:translate-y-[-10px] hover:scale-[1.2] hover:transition-all"
+                                        src="./assets/images/png/twitter.png" alt="twitter"></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="sm:flex lg:ps-20">
+                    <div class="sm:flex lg:ps-20" data-aos="fade-left" data-duration="1500" data-aos-easing="linear"
+                        data-deley="500">
                         <div class="py-7 sm:pt-5">
                             <ul>
                                 <li class="playfair font-bold text-[26px] text-white">About</li>
                                 <li class="pt-12"><a href="#"
-                                        class="text-white playfair text-[18px] font-normal">Menu</a></li>
+                                        class="text-white playfair text-[18px] font-normal hover:scale-[1.01] hover:text-[#F9C06A]">Menu</a>
+                                </li>
                                 <li class="pt-6"><a href="#"
-                                        class="text-white playfair text-[18px] font-normal">Features</a></li>
-                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">News
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">Features</a>
+                                </li>
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">News
                                         &
                                         Blogs</a>
                                 </li>
-                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">Help
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">Help
                                         &
                                         Supports</a>
                                 </li>
@@ -571,14 +666,17 @@
                         <div class="sm:ps-20 sm:pt-5 py-7">
                             <ul>
                                 <li class="playfair font-bold text-[26px] text-white">Company</li>
-                                <li class="pt-12"><a href="#" class="text-white playfair text-[18px] font-normal">How we
+                                <li class="pt-12"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">How we
                                         work</a></li>
-                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">Terms
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">Terms
                                         of service</a></li>
                                 <li class="pt-6"><a href="#"
-                                        class="text-white playfair text-[18px] font-normal">Pricing</a>
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">Pricing</a>
                                 </li>
-                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">FAQ</a>
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -586,17 +684,18 @@
                             <ul>
                                 <li class="playfair font-bold text-[26px] text-white">Contact Us</li>
                                 <li class="max-w-[332px] pt-7"><a href="#"
-                                        class="text-white playfair text-[18px] font-normal">Akshya
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">Akshya
                                         Nagar 1st
                                         Block 1st Cross, Rammurthy nagar, Bangalore-560016</a></li>
-                                <li class="pt-6"><a href="#" class="text-white playfair text-[18px] font-normal">+1
+                                <li class="pt-6"><a href="#"
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">+1
                                         202-918-2132</a>
                                 </li>
                                 <li class="pt-6"><a href="#"
-                                        class="text-white playfair text-[18px] font-normal">beanscene@mail.com</a>
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">beanscene@mail.com</a>
                                 </li>
                                 <li class="pt-6"><a href="#"
-                                        class="text-white playfair text-[18px] font-normal">www.beanscene.com</a>
+                                        class="text-white playfair text-[18px] font-normal hover:text-[#F9C06A]">www.beanscene.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -607,6 +706,12 @@
         </section>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        once: true;
+    </script>
+    <script src="./assets/js/style.js"></script>
 </body>
 
 </html>
